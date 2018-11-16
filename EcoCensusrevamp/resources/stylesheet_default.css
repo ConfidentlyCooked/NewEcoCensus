@@ -1,0 +1,91 @@
+#EcoCensus, #ConfirmDialog, .QSplitter::handle {
+    background-color: #f2fff2;
+}
+
+.QTabWidget {
+    color: black ;
+    border: 1px solid black;
+}
+
+.QTabWidget::pane {
+    border: 1px solid black;
+/*    border image if we want it    */
+/*    border: 1em;*/
+/*    padding: -0.75em;*/
+/*    border-image: url(:/ui/images/border.png) 30 round;*/
+}
+
+#imageScroll {
+    background-color: transparent;
+}
+
+.QPushButton {
+    color: black;
+    border: 1px solid grey;
+    border-radius: 0.75em;
+    padding: 0.25em;
+}
+
+
+/*Interactible Colors*/
+
+/*Default State*/
+.QPushButton, .QTabBar::tab {
+    color: black;
+    background-color: #f1f4f1;
+}
+
+/*Hover State*/
+.QPushButton:hover, .QListWidget::item:hover, .QTabBar::tab:hover{
+    color: black;
+    background-color: #f1f4f1;
+}
+
+/*Pressed State*/
+.QPushButton:pressed {
+    background-color: #f1f4f1;
+}
+
+.QListWidget::item:selected {
+    background-color: #f1f4f1;
+}
+
+.QTabBar::tab:selected {
+    color: white;
+    background-color: #8d858d; /* #9c8 */
+}
+
+/*Interactibles End*/
+
+.ImageView, .QListWidget, .QTextBrowser, .QLineEdit {
+    background-color: white;
+    color: black;
+    /*background: qlineargradient(
+        x1: 0, x2: 1, y1: 0, y2: 1,
+        stop: 0.0 #f00,
+        stop: 0.3 #ff0,
+        stop: 0.7 #0ff,
+        stop: 1.0 #00f);*/
+    border: 1px solid black;
+    /*border-radius: 1em;*/
+}
+
+.ImageView {
+/*    background-image: url(:/ui/buttons/transparency_swatch.gif) repeat repeat;*/
+}
+
+.QLineEdit {
+    color: black;
+    border: 1px solid black;
+    border-radius: 0.5em;
+}
+
+.QFrame {
+    border-radius: 0em;
+}
+
+
+
+
+
+

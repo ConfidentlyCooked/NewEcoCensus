@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/ui/buttons">
+        <file alias="transparency_swatch.gif">resources/transparency_swatch.gif</file>
+    </qresource>
+    <qresource prefix="/ui/images">
+        <file alias="border.png">resources/border.png</file>
+    </qresource>
+    <qresource prefix="/ui/styles">
+        <file alias="stylesheet_default.css">resources/stylesheet_default.css</file>
+    </qresource>
+    <qresource prefix="/scripts/python">
+        <file alias="image_partition.py">resources/scripts/image_partition.py</file>
+        <file alias="imageReader.py">resources/scripts/imageReader.py</file>
+        <file alias="predictions.py">resources/scripts/predictions.py</file>
+        <file alias="train.py">resources/scripts/train.py</file>
+    </qresource>
+</RCC>
