@@ -1,3 +1,9 @@
+/*
+ main.cpp
+ EcoCensus
+ Copyright 2017: Rebekah Loving and Morgan West
+ */
+
 #include "EcoCensus.h"
 #include <QApplication>
 #include <QFileDialog>

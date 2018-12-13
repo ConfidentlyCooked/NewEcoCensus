@@ -1,3 +1,9 @@
+/*
+ confirmdialog.h
+ EcoCensus
+ Copyright 2018: Morgan Friend, Rebekah Loving, and Morgan West
+ */
+
 #ifndef CONFIRMDIALOG_H
 #define CONFIRMDIALOG_H
 

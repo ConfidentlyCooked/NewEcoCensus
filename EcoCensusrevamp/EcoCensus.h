@@ -1,3 +1,9 @@
+/*
+EcoCensus.h
+EcoCensus
+Copyright 2017: Morgan Friend, Rebekah Loving, and Morgan West
+*/
+
 #ifndef ECOCENSUS_H
 #define ECOCENSUS_H
 

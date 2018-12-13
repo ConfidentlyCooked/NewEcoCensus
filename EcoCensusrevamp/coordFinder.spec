@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['imageReader.py'],
+a = Analysis(['coordFinder.py'],
              pathex=['/Users/devanshibhimjiyani/Desktop/CurrentImplementation04082018'],
              binaries=[],
              datas=[],
@@ -21,7 +21,7 @@ exe = EXE(pyz,
           a.scripts,
           [],
           exclude_binaries=True,
-          name='imageReader',
+          name='coordFinder',
           debug=False,
           bootloader_ignore_signals=False,
           strip=False,
@@ -33,4 +33,4 @@ coll = COLLECT(exe,
                a.datas,
                strip=False,
                upx=True,
-               name='imageReader')
+               name='coordFinder')

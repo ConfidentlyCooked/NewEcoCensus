@@ -129,6 +129,8 @@ public:
     QLineEdit *predict_threshold;
     QSpacerItem *horizontalSpacer_7;
     QHBoxLayout *horizontalLayout_2;
+    QLabel *label_2;
+    QLineEdit *faltitude_input;
     QSpacerItem *horizontalSpacer_8;
     QPushButton *button_predict;
     QSpacerItem *horizontalSpacer_3;
@@ -760,6 +762,18 @@ public:
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+     
+        label_2 = new QLabel(frame_Dirs);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        
+        horizontalLayout_2->addWidget(label_2);
+        
+        faltitude_input = new QLineEdit(frame_Dirs);
+        faltitude_input->setObjectName(QStringLiteral("faltitude_input"));
+        faltitude_input->setMaxLength(50);
+        
+        horizontalLayout_2->addWidget(faltitude_input);
+        
         horizontalSpacer_8 = new QSpacerItem(333, 20, QSizePolicy::Preferred, QSizePolicy::Minimum);
 
         horizontalLayout_2->addItem(horizontalSpacer_8);
@@ -1150,6 +1164,7 @@ public:
 #endif // QT_NO_TOOLTIP
         classify_root_url->setText(QString());
         label->setText(QApplication::translate("EcoCensus", "   Predictions Threshold", nullptr));
+        label_2->setText(QApplication::translate("EcoCensus", " Flight Altitude ", nullptr));
         button_predict->setText(QApplication::translate("EcoCensus", "Partition and Predict", nullptr));
         classify_refresh->setText(QApplication::translate("EcoCensus", "Refresh Features", nullptr));
 #ifndef QT_NO_TOOLTIP

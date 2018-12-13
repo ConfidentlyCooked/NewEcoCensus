@@ -1,3 +1,9 @@
+/*
+ confirmdialog.cpp
+ EcoCensus
+ Copyright 2018: Morgan Friend, Rebekah Loving, and Morgan West
+ */
+
 #include "confirmdialog.h"
 #include "ui_confirmdialog.h"
 

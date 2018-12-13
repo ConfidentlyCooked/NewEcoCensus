@@ -146,5 +146,6 @@ class CoordFinder:
         realCoordsY = edgeN[1] + (distNS * yratio)        
         
         UTMcoords = self.toUTM((realCoordsX,realCoordsY))
-        return (UTMcoords, (realCoordsX, realCoordsY))
+        return(UTMcoords)
+#return (UTMcoords, (realCoordsX, realCoordsY))
                 

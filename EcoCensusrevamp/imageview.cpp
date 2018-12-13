@@ -1,3 +1,9 @@
+/*
+ imageview.cpp
+ EcoCensus
+ Copyright 2017: Rebekah Loving and Morgan West
+ */
+
 #include "imageview.h"
 #include "ui_imageview.h"
 #include <QDebug>

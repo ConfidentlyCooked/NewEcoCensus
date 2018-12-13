@@ -1,3 +1,9 @@
+/*
+EcoCensus.cpp
+EcoCensus
+Copyright 2017: Rebekah Loving and Morgan West
+*/
+
 #include "EcoCensus.h"
 #include "ui_mainwindow.h"
 #include <QFileDialog>
@@ -395,7 +401,6 @@ void EcoCensus::on_button_predict_clicked()
 
     QDir rDir(root);
     QDir dDir(dest);
-
     // Predict on the directories
       QString EcoCensusDir = "cd " +QCoreApplication::applicationDirPath() + "/dist";
       QString swd = EcoCensusDir;
@@ -404,17 +409,20 @@ void EcoCensus::on_button_predict_clicked()
       QString params2 = EcoCensusDir;
       QString params3 = EcoCensusDir;
       QString params4 = "rmdir ";
-      double FOV = 94;
-      double HEIGHT = 60;
+      QString heightval = EcoCensusDir;
+      heightval = ui->faltitude_input->text();
+      double FOV = 94.0;
+      double HEIGHT = 60.0;
       params1 += "/image_partition; ./image_partition ";
-      params1 += root + " " + FOV + " " + HEIGHT;;
+      params1 += root + " " + QString::number(FOV) + " " + ui->faltitude_input->text();
       params1 = "cd; " + params1;
       params2 += "/predictions; export PBR_VERSION='3.0.0'; ./predictions ";
       params2 += dest + " " + ui->predict_threshold->text();
       params2 = "cd; " + params2;
       params3 += "/imageReader; ./imageReader ";
-      params3 += dest + " " + FOV + " " + HEIGHT;
+      params3 += dest + " " + QString::number(FOV) + " " + ui->faltitude_input->text();
       params3 = "cd; " + params3;
+      qDebug() << "This is params3 ===   " << params3 << endl;
       params4 += dest;
       params4 += "/Partitions";
       system(qPrintable(swd));
